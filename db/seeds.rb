@@ -14,7 +14,7 @@ Movie.destroy_all
 puts 'Creating 20 movies in the database...'
 20.times do
   movie = Movie.new(
-    title: Faker::Movie.title,
+    title: Faker::Movie.unique.title,
     overview: Faker::Quote.yoda,
     poster_url: Faker::Internet.url,
     rating: Faker::Number.between(from: 1, to: 5)
