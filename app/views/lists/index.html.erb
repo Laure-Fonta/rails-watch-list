@@ -1,0 +1,12 @@
+<h1>My movie List</h1>
+<br>
+<ul>
+ <% @list.each do |l| %>
+    <li>
+      <h2><%= l.name %></h2>
+    </li>
+  <% end %>
+</ul>
+
+
+<%# <%= link_to "#", blbla_path %>

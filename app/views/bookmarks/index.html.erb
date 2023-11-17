@@ -1,0 +1,10 @@
+<h1>My bookmarks </h1>
+<br>
+<ul>
+ <% @bookmark.each do |b| %>
+    <li>
+      <ul><%= @movie["name"] %></ul>
+      <ul><%= bookmark["comment"] %><ul>  ##ca ne vas pas marcher ici
+    </li>
+  <% end %>
+</ul>
