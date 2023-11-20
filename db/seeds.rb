@@ -16,7 +16,7 @@ puts 'Creating 20 movies in the database...'
   movie = Movie.new(
     title: Faker::Movie.unique.title,
     overview: Faker::Quote.yoda,
-    poster_url: Faker::Internet.url,
+    poster_url: 
     rating: Faker::Number.between(from: 1, to: 5)
   )
   movie.save!

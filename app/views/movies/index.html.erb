@@ -1,0 +1,21 @@
+
+<div class="container">
+<h1> Tous les films ! </h1>
+<br>
+<br>
+<br>
+<% @movies.each do |movie| %>
+  <div class="card-product">
+
+    <%= image_tag "avatar.png", alt: "avatar", width: 200 %>
+    <div class="card-product-infos">
+      <h2><%= movie.title %></h2>
+
+      <p>description : <%= movie.overview %> </p>
+
+link_to
+    </div>
+  </div>
+<% end %>
+
+</div>
